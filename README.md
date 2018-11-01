@@ -19,7 +19,7 @@ To clone and run this repository you'll need [Git](https://git-scm.com) and [Nod
 
 ```bash
 # Clone this repository
-git clone https://github.com/electron/typscript-eapp-get-started
+git clone https://github.com/dust7francis/typescript-eapp-get-started
 # Go into the repository
 cd typscript-get-started
 # Install dependencies
