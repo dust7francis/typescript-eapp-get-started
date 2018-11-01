@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "module": "commonJs",
+    "target": "ES2017",
+    "lib": ["es6", "dom"],
+    "noImplicitAny": true,
+    "sourceMap": true,
+    "allowJs": true,
+    "jsx": "react",
+    "moduleResolution": "node",
+    "outDir": "js",
+    "rootDir": "src",
+    "baseUrl": ".",
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": true,
+  },
+  "exclude": [
+    "js",
+    "app",
+    "dist",
+    "node_modules",
+    "build",
+    "scripts",
+    "acceptance-tests",
+    "webpack*",
+    "jest",
+    "config"
+  ]
+}

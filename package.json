@@ -1,0 +1,40 @@
+{
+  "name": "typescript-eapp-get-started",
+  "version": "0.1.0",
+  "description": "typescript get started with Electron App",
+  "main": "/app/main.js",
+  "scripts": {
+    "start": "concurrently \"yarn renderer\" \"cross-env HOT=1 NODE_ENV=development  electron ./app/main.js\"",
+    "main": "cross-env NODE_ENV=development webpack --config ./webpack/main.js",
+    "renderer": "cross-env START_HOT=1 NODE_ENV=development webpack-serve --hot-client --port 1414 ./webpack/renderer.js"
+  },
+  "repository": "https://github.com/dust7francis/typescript-eapp-get-started",
+  "keywords": [
+    "typscript",
+    "Electron",
+    "get",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "Dust Francis",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "@types/debounce": "^3.0.0",
+    "@types/electron-debug": "^1.1.0",
+    "concurrently": "^4.0.1",
+    "cross-env": "^5.2.0",
+    "debounce": "^1.2.0",
+    "electron": "^3.0.4",
+    "ts-loader": "^5.3.0",
+    "typescript": "^3.1.5",
+    "webpack": "^4.23.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-merge": "^4.1.4",
+    "webpack-serve": "^2.0.2"
+  },
+  "dependencies": {
+    "date-fns": "^1.29.0",
+    "electron-debug": "^2.0.0"
+  }
+}

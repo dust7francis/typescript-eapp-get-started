@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Electron App Getting Started in Typescript</title>
+  </head>
+  <body>
+    <h1>Electron App Getting Started in Typescript</h1>
+    <h3 id="lastUpdated">Webpack-serve is not ready. Try reload using menu \View\Reload</h3>
+    
+    <script>
+      {
+        const port = process.env.PORT || 1414;
+        const script = process.env.NODE_ENV === 'development' 
+          ? `http://localhost:${port}/renderer.js`
+          : './dist/renderer.prod.js'
+        document.write(`<script defer src="${script}"><\/script>`);
+        console.log(`
+          Node.js: ${process.versions.node},
+          Chromium: ${process.versions.chrome}
+          Electron: ${process.versions.electron}`)
+      }
+    </script>
+  </body>
+</html>
